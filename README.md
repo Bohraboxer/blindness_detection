@@ -19,3 +19,10 @@ There are two types of files, one being the CSV file for storing the labels of t
 4) Class 3 : Moderate
 
 5) Class 4 : Severe
+
+I experimented with various changes to the dataset to build a robust model. I tried different pre-trained weights (Transfer learning). Different image size(150, 250, 256, 500,etc) , simple and complex data augmentation. 
+I also found some extra data on Internet and tried using it to improve the model's performance but the model did not perform well with the additional data.
+
+The best performing model gave a Kappa Score of 73.5
+
+In the model, the image size was 250*250, DenseNet 201 as the pre-trained weights, used early stopping and ReduceLearningRateOn Plateau to avoid overfitting of data.
